@@ -16,7 +16,7 @@ const Home: React.FC = () => {
           <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-jet-500 to-battleship_gray-600 text-transparent bg-clip-text drop-shadow-lg">
             Huib Luns
           </h1>
-          <p className="text-xl mb-12 bg-gradient-to-r from-jet-700 to-battleship_gray-700 text-transparent bg-clip-text">Discover the early 1900s art of the Dutch painter.</p>
+          <p className="text-xl mb-12 bg-gradient-to-r from-jet-700 to-battleship_gray-700 text-transparent bg-clip-text">Discover the early 1900's with the Dutch painter.</p>
           <div className="space-x-4">
             <Link 
               to="/gallery" 
