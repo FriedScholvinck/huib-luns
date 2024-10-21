@@ -8,21 +8,24 @@ const blogPosts = [
     title: 'The Self-Portrait: A Window into Huib Luns',
     date: '2023-05-15',
     excerpt: 'Explore the introspective world of Huib Luns through his captivating self-portrait from 1920...',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Zelfportret%2C_door_Huib_Luns.jpg/266px-Zelfportret%2C_door_Huib_Luns.jpg'
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Zelfportret%2C_door_Huib_Luns.jpg/266px-Zelfportret%2C_door_Huib_Luns.jpg',
+    popularity: 10
   },
   {
     id: 2,
     title: 'A Father\'s Portrait: Huib Luns\' Emotional Masterpiece',
     date: '2023-04-28',
     excerpt: 'Delve into the touching portrait of Huib Luns\' father, painted in 1904, showcasing the artist\'s early talent...',
-    imageUrl: 'https://www.cultureelerfgoed.nl/binaries/large/content/gallery/cultureelerfgoed/content-afbeeldingen/collecties/kunstwerk-vd-maand/huib_luns_portret_van_mijnen_vader_1904_ab6294.jpg'
+    imageUrl: 'https://www.cultureelerfgoed.nl/binaries/large/content/gallery/cultureelerfgoed/content-afbeeldingen/collecties/kunstwerk-vd-maand/huib_luns_portret_van_mijnen_vader_1904_ab6294.jpg',
+    popularity: 20
   },
   {
     id: 3,
     title: 'Nature\'s Canvas: Luns\' Landscape with Trees',
     date: '2023-04-10',
     excerpt: 'Discover the serene beauty captured in Huib Luns\' landscape painting from 1910...',
-    imageUrl: 'https://www.simonis-buunk.nl/images/art/large/22390.jpg'
+    imageUrl: 'https://www.simonis-buunk.nl/images/art/large/22390.jpg',
+    popularity: 30
   }
 ]
 
@@ -40,10 +43,8 @@ const Blog: React.FC = () => {
   }, [blogPosts, sortBy]);
 
   return (
-    <div className="container mx-auto px-4 py-16">
-      <AnimateOnScroll>
-        <h1 className="text-4xl font-bold mb-12 text-primary"> </h1>
-      </AnimateOnScroll>
+    <div className="container mx-auto px-4 py-16">      
+      <div className="h-4"></div>
       <div className="space-y-16">
         {sortedPosts.map((post) => (
           <AnimateOnScroll key={post.id}>

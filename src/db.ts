@@ -6,6 +6,8 @@ export interface Artwork {
   year: number
   imageUrl: string
   description: string
+  popularity: number
+  type: string
 }
 
 export class ArtworkDatabase extends Dexie {
